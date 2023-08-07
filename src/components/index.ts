@@ -1,3 +1,5 @@
+export { default as ButtonLink } from './button/ButtonLink'
 export { default as Carousel } from './carousel/Carousel'
+export { default as CallToAction } from './cta/CallToAction'
 export { default as Header } from './header/Header'
 export { default as Hero } from './hero/Hero'
