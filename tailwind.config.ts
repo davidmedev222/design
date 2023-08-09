@@ -12,8 +12,8 @@ const config: Config = {
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       },
       animation: {
-        marquee: 'marquee 30000ms linear infinite',
-        marquee2: 'marquee2 30000ms linear infinite'
+        marquee: 'marquee 60000ms linear infinite',
+        marquee2: 'marquee2 60000ms linear infinite'
       },
       keyframes: {
         marquee: {

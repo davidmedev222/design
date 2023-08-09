@@ -1,4 +1,4 @@
-import { CallToAction, Carousel, Hero, RedirectText } from '@/components'
+import { BrandsMarquee, CallToAction, Carousel, Hero, RedirectText } from '@/components'
 
 function HomePage() {
   return (
@@ -7,6 +7,7 @@ function HomePage() {
       <Carousel />
       <RedirectText text='Explore My Work' />
       <CallToAction />
+      <BrandsMarquee />
     </main>
   )
 }
