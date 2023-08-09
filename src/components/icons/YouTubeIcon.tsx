@@ -1,7 +1,7 @@
 function YouTubeIcon() {
   return (
     <svg width='100' height='100' viewBox='0 0 107 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      <g clip-path='url(#clip0_1_338)'>
+      <g clipPath='url(#clip0_1_338)'>
         <mask id='mask0_1_338' maskUnits='userSpaceOnUse' x='0' y='0' width='107' height='26'>
           <path d='M106.696 0.892944H0.485077V25.2937H106.696V0.892944Z' fill='white' />
         </mask>

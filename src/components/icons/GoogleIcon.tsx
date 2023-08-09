@@ -1,7 +1,7 @@
 function GoogleIcon() {
   return (
     <svg width='100' height='100' viewBox='0 0 102 34' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      <g clip-path='url(#clip0_1_360)'>
+      <g clipPath='url(#clip0_1_360)'>
         <mask id='mask0_1_360' maskUnits='userSpaceOnUse' x='0' y='0' width='102' height='34'>
           <path d='M101.805 0.410034H0.338867V33.1385H101.805V0.410034Z' fill='white' />
         </mask>

@@ -1,7 +1,7 @@
 function FacebookIcon() {
   return (
     <svg width='100' height='100' viewBox='0 0 124 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      <g clip-path='url(#clip0_1_381)'>
+      <g clipPath='url(#clip0_1_381)'>
         <mask id='mask0_1_381' maskUnits='userSpaceOnUse' x='0' y='0' width='124' height='26'>
           <path d='M123.519 0.892944H0.44812V25.2937H123.519V0.892944Z' fill='white' />
         </mask>

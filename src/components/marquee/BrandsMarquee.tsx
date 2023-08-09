@@ -11,7 +11,7 @@ function BrandsMarquee() {
   }
 
   return (
-    <div className='relative flex'>
+    <div className='relative flex overflow-x-hidden'>
       <ul className={classes.brands}>
         <li className='mx-10 grow'>
           <TwitchIcon />
