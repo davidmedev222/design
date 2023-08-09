@@ -1,4 +1,4 @@
-import { Header } from '@/components'
+import { Footer, Header } from '@/components'
 import '@/styles/globals.css'
 
 export const metadata = {
@@ -16,6 +16,7 @@ function RootLayout({ children }: Props) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
