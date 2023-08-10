@@ -14,7 +14,10 @@ Website that allows designers to show their work and projects in an attractive a
 
 ## **🎨MOCKUPS**
 
-...
+![](https://res.cloudinary.com/dos3i5jqy/image/upload/v1691694418/layers/design/mockup_ve544v.webp)
+![](https://res.cloudinary.com/dos3i5jqy/image/upload/v1691694418/layers/design/mockup2_nikfjh.webp)
+![](https://res.cloudinary.com/dos3i5jqy/image/upload/v1691694418/layers/design/mockup3_poxxas.webp)
+![](https://res.cloudinary.com/dos3i5jqy/image/upload/v1691694418/layers/design/mockup4_s5vn57.webp)
 
 ## **💬TECHNOLOGIES USED**
 
