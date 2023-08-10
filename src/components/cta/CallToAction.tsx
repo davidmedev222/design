@@ -7,7 +7,7 @@ function CallToAction() {
         I've been helping business thrive in the digital space also increasing drastically their revenues building
         insightful strategy, creating unique designs and crafting experiences that bring positive change and value.
       </h2>
-      <ButtonLink border='rounded' align='center'>
+      <ButtonLink href='#works' border='rounded' align='center'>
         Explore Designs
       </ButtonLink>
     </section>
