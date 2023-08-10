@@ -20,7 +20,7 @@ function Carousel() {
     <div className={classes.container}>
       <ul className={classes.carousel}>
         {imagesCarousel.map((image) => (
-          <li key={image.id} className='relative w-36 sm:w-96'>
+          <li key={crypto.randomUUID()} className='relative w-36 sm:w-96'>
             <Image
               src={image.src}
               alt='Presentation image about design projects'
@@ -35,7 +35,7 @@ function Carousel() {
       </ul>
       <ul className={classes.carousel2}>
         {imagesCarousel.map((image) => (
-          <li key={image.id} className='relative w-36 sm:w-96'>
+          <li key={crypto.randomUUID()} className='relative w-36 sm:w-96'>
             <Image
               src={image.src}
               alt='Presentation image about design projects'
