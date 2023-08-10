@@ -19,7 +19,7 @@ function ProyectList() {
   }
 
   return (
-    <ul className={classes.list}>
+    <ul id='works' className={classes.list}>
       {proyects.map((proyect) => (
         <li key={proyect.id}>
           <Link href={`${Routes.works}/${proyect.slug}`} className={classes.proyect}>
