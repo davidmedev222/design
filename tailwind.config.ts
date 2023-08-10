@@ -15,6 +15,9 @@ const config: Config = {
         marquee: 'marquee 60000ms linear infinite',
         marquee2: 'marquee2 60000ms linear infinite'
       },
+      animationDuration: {
+        25000: '25000ms'
+      },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0)' },

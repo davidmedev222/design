@@ -8,11 +8,9 @@ function Carousel() {
 
   const classes = {
     container: clsx('group relative flex overflow-x-hidden'),
-    carousel: clsx(
-      'flex h-80 animate-marquee max-sm:[animation-duration:25000ms] lg:h-96 lg:group-hover:[animation-play-state:paused]'
-    ),
+    carousel: clsx('flex h-80 animate-marquee max-sm:animate-duration-25000 lg:h-96 lg:group-hover:animate-pause'),
     carousel2: clsx(
-      'absolute top-0 flex h-80 animate-marquee2 max-sm:[animation-duration:25000ms] lg:h-96 lg:group-hover:[animation-play-state:paused]'
+      'absolute top-0 flex h-80 animate-marquee2 max-sm:animate-duration-25000 lg:h-96 lg:group-hover:animate-pause'
     )
   }
 
