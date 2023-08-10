@@ -1,7 +1,15 @@
+import { BrandsMarquee, CallToAction, CarouselMarquee, Hero, RedirectText } from '@/components'
+import ProyectList from '@/components/proyect/ProyectList'
+
 function HomePage() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-center'>
-      <h1 className='text-center text-5xl'>Hello Word</h1>
+    <main>
+      <Hero />
+      <CarouselMarquee />
+      <RedirectText text='Explore My Work' />
+      <CallToAction />
+      <BrandsMarquee />
+      <ProyectList />
     </main>
   )
 }
