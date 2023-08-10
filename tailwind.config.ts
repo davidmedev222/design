@@ -13,7 +13,11 @@ const config: Config = {
       },
       animation: {
         marquee: 'marquee 60000ms linear infinite',
-        marquee2: 'marquee2 60000ms linear infinite'
+        marquee2: 'marquee2 60000ms linear infinite',
+        'scale-in': 'scale-in 1000ms linear forwards'
+      },
+      animationDuration: {
+        25000: '25000ms'
       },
       keyframes: {
         marquee: {
@@ -23,6 +27,10 @@ const config: Config = {
         marquee2: {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0)' }
+        },
+        'scale-in': {
+          '0%': { opacity: '0', transform: 'scale(0.90)' },
+          '100%': { opacity: '1', transform: 'scale(1)' }
         }
       },
       rotate: {
@@ -30,6 +38,6 @@ const config: Config = {
       }
     }
   },
-  plugins: []
+  plugins: [require('tailwindcss-animated')]
 }
 export default config
