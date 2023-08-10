@@ -4,11 +4,9 @@
 
 ## **📑 GUIDE**
 
-<ol>
-<li><a href='#demo'>Demo</a></li>
-<li><a href='#mockups'>Mockups</a></li>
-<li><a href='#technologies-used'>Technologies Used</a></li>
-</ol>
+1. [Demo](#demo)
+2. [Mockups](#mockups)
+3. [Technologies Used](#technologies-used)
 
 ## **🚀DEMO**
 
@@ -20,4 +18,4 @@
 
 ## **💬TECHNOLOGIES USED**
 
-...
+Use [Typescript](https://www.typescriptlang.org), [Next 13](https://nextjs.org) as development framework to [React](https://react.dev), [TailwindCSS](https://tailwindcss.com) as styling framework, [Clsx](https://github.com/lukeed/clsx) as class constructor, [Husky](https://typicode.github.io/husky) for executing Git hooks with [Commitlint](https://commitlint.js.org) [Conventional Commits](https://www.conventionalcommits.org) rules, [ESLint](https://eslint.org) as code linter with [TS Standard](https://github.com/standard/ts-standard) rules, [Prettier](https://prettier.io) as code formatter, [Pnpm](https://pnpm.io) for package management, [Git](https://git-scm.com/doc) for version control, and [Github](https://docs.github.com) for hosting project's code.
