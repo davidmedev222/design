@@ -12,17 +12,16 @@ function Carousel() {
 
   const classes = {
     container: clsx('group relative flex overflow-x-hidden opacity-0', isIntersecting && 'animate-scale-in'),
-    carousel: clsx('flex h-80 animate-marquee max-sm:animate-duration-25000 lg:h-96 lg:group-hover:animate-pause'),
-    carousel2: clsx(
-      'absolute top-0 flex h-80 animate-marquee2 max-sm:animate-duration-25000 lg:h-96 lg:group-hover:animate-pause'
-    )
+    carousel: clsx('animate-marquee whitespace-nowrap lg:group-hover:animate-pause'),
+    carousel2: clsx('absolute animate-marquee2 whitespace-nowrap lg:group-hover:animate-pause'),
+    image: clsx('relative inline-block h-80 w-36 sm:w-96 lg:h-96')
   }
 
   return (
     <div ref={ref} className={classes.container}>
-      <ul className={classes.carousel}>
+      <div className={classes.carousel}>
         {imagesCarousel.map((image) => (
-          <li key={crypto.randomUUID()} className='relative w-36 sm:w-96'>
+          <span key={crypto.randomUUID()} className={classes.image}>
             <Image
               src={image.src}
               alt='Presentation image about design projects'
@@ -32,12 +31,12 @@ function Carousel() {
               blurDataURL={yellowBlurDataURL}
               sizes='25vw'
             />
-          </li>
+          </span>
         ))}
-      </ul>
-      <ul className={classes.carousel2}>
+      </div>
+      <div className={classes.carousel2}>
         {imagesCarousel.map((image) => (
-          <li key={crypto.randomUUID()} className='relative w-36 sm:w-96'>
+          <span key={crypto.randomUUID()} className={classes.image}>
             <Image
               src={image.src}
               alt='Presentation image about design projects'
@@ -47,9 +46,9 @@ function Carousel() {
               blurDataURL={yellowBlurDataURL}
               sizes='25vw'
             />
-          </li>
+          </span>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }
