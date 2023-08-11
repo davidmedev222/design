@@ -12,8 +12,8 @@ function Carousel() {
 
   const classes = {
     container: clsx('group relative flex overflow-x-hidden opacity-0', isIntersecting && 'animate-scale-in'),
-    carousel: clsx('animate-marquee whitespace-nowrap lg:group-hover:animate-pause'),
-    carousel2: clsx('absolute animate-marquee2 whitespace-nowrap lg:group-hover:animate-pause'),
+    carousel: clsx('animate-marquee whitespace-nowrap will-change-transform lg:group-hover:animate-pause'),
+    carousel2: clsx('absolute animate-marquee2 whitespace-nowrap will-change-transform lg:group-hover:animate-pause'),
     image: clsx('relative inline-block h-80 w-36 sm:w-96 lg:h-96')
   }
 
