@@ -5,24 +5,22 @@ import { useIntersectionObserver } from '@/hooks'
 import { carousel } from '@/services'
 import clsx from 'clsx'
 import Image from 'next/image'
+import Marquee from 'react-fast-marquee'
 
 function Carousel() {
   const [isIntersecting, ref] = useIntersectionObserver({ options: { threshold: 0.25 }, unobserve: true })
   const imagesCarousel = [...carousel, ...carousel]
 
   const classes = {
-    container: clsx('group relative flex overflow-x-hidden opacity-0', isIntersecting && 'animate-scale-in'),
-    carousel: clsx('flex h-80 animate-marquee max-sm:animate-duration-25000 lg:h-96 lg:group-hover:animate-pause'),
-    carousel2: clsx(
-      'absolute top-0 flex h-80 animate-marquee2 max-sm:animate-duration-25000 lg:h-96 lg:group-hover:animate-pause'
-    )
+    container: clsx('flex h-80 overflow-x-hidden opacity-0', isIntersecting && 'animate-scale-in'),
+    image: clsx('relative h-80 w-36 sm:w-96')
   }
 
   return (
     <div ref={ref} className={classes.container}>
-      <ul className={classes.carousel}>
+      <Marquee>
         {imagesCarousel.map((image) => (
-          <li key={crypto.randomUUID()} className='relative w-36 sm:w-96'>
+          <div key={crypto.randomUUID()} className={classes.image}>
             <Image
               src={image.src}
               alt='Presentation image about design projects'
@@ -32,24 +30,9 @@ function Carousel() {
               blurDataURL={yellowBlurDataURL}
               sizes='25vw'
             />
-          </li>
+          </div>
         ))}
-      </ul>
-      <ul className={classes.carousel2}>
-        {imagesCarousel.map((image) => (
-          <li key={crypto.randomUUID()} className='relative w-36 sm:w-96'>
-            <Image
-              src={image.src}
-              alt='Presentation image about design projects'
-              className='object-cover'
-              fill
-              placeholder='blur'
-              blurDataURL={yellowBlurDataURL}
-              sizes='25vw'
-            />
-          </li>
-        ))}
-      </ul>
+      </Marquee>
     </div>
   )
 }
