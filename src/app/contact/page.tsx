@@ -1,3 +1,4 @@
+import { Toaster } from 'react-hot-toast'
 import { ContactForm, Hero } from './components'
 
 function ContactPage() {
@@ -5,6 +6,7 @@ function ContactPage() {
     <main>
       <Hero />
       <ContactForm />
+      <Toaster />
     </main>
   )
 }
