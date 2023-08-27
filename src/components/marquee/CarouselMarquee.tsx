@@ -1,8 +1,8 @@
 'use client'
 
-import { yellowBlurDataURL } from '@/constants'
 import { useIntersectionObserver } from '@/hooks'
 import { carousel } from '@/services'
+import { yellowBlurDataURL } from '@/utils/constants'
 import clsx from 'clsx'
 import Image from 'next/image'
 import Marquee from 'react-fast-marquee'

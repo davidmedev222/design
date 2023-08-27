@@ -1,6 +1,8 @@
 export { default as ButtonLink } from './button/ButtonLink'
 export { default as CallToAction } from './cta/CallToAction'
 export { default as Footer } from './footer/Footer'
+export { default as Input } from './form/Input'
+export { default as Textarea } from './form/Textarea'
 export { default as Header } from './header/Header'
 export { default as Hero } from './hero/Hero'
 export { default as BrandFacebookIcon } from './icons/BrandFacebookIcon'

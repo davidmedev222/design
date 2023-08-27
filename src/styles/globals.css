@@ -25,4 +25,8 @@
   select {
     @apply rounded-lg border-transparent bg-gray-100 placeholder:text-black/50 focus:border-black focus:ring-black;
   }
+
+  form p {
+    @apply pl-2 text-sm text-red-500;
+  }
 }

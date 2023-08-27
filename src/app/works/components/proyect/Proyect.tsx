@@ -1,6 +1,6 @@
 'use client'
-import { yellowBlurDataURL } from '@/constants'
 import { useIntersectionObserver } from '@/hooks'
+import { yellowBlurDataURL } from '@/utils/constants'
 import clsx from 'clsx'
 import Image from 'next/image'
 
