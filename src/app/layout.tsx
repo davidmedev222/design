@@ -1,5 +1,5 @@
 import { Footer, Header } from '@/components'
-import '@/styles/globals.css'
+import '../styles/globals.css'
 
 export const metadata = {
   title: 'Design',
