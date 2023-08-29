@@ -20,7 +20,10 @@ function Input({ type, name, placeholder }: Props) {
 
   const classes = {
     container: clsx('grid gap-y-1.5'),
-    input: clsx(errors[name] && 'border-red-500 focus:border-red-500 focus:ring-red-500')
+    input: clsx(
+      errors[name] &&
+        'border-red-500 focus:border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:border-red-500 dark:focus:ring-red-500'
+    )
   }
 
   return (

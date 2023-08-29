@@ -14,7 +14,7 @@ function Hero({ proyect }: Props) {
   const classes = {
     hero: clsx('mx-auto grid max-w-screen-lg gap-y-8 p-8 opacity-0', isIntersecting && 'animate-scale-in'),
     title: clsx('text-center text-[min(17vw,90px)]'),
-    description: clsx('text-center text-base text-gray-500')
+    description: clsx('text-center text-base text-gray-500 dark:text-gray-200')
   }
 
   return (

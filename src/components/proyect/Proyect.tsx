@@ -17,7 +17,7 @@ function Proyect({ proyect }: Props) {
     proyect: clsx('group relative block aspect-square opacity-0', isIntersecting && 'animate-scale-in'),
     image: clsx('rounded-xl object-cover'),
     background: clsx(
-      'absolute bottom-0 grid h-full w-full items-end rounded-xl bg-gradient-to-t from-black px-6 py-4 transition-opacity duration-700 group-hover:opacity-100 lg:opacity-0'
+      'absolute bottom-0 grid h-full w-full items-end rounded-xl bg-gradient-to-t from-black px-6 py-4 transition-opacity duration-700 group-hover:opacity-100 dark:from-gray-700 lg:opacity-0'
     ),
     name: clsx(
       'text-fluid-8xl text-white transition duration-500 lg:translate-y-6 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100'

@@ -23,7 +23,7 @@
   [multiple],
   textarea,
   select {
-    @apply rounded-lg border-transparent bg-gray-100 placeholder:text-black/50 focus:border-black focus:ring-black;
+    @apply rounded-lg border-transparent bg-gray-100 placeholder:text-black/50 focus:border-black focus:ring-black dark:bg-gray-900 dark:placeholder:text-white/50 dark:focus:border-white dark:focus:ring-white;
   }
 
   form p {

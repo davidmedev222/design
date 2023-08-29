@@ -1,4 +1,5 @@
 import { Footer, Header } from '@/components'
+import { Providers } from '@/context'
 import '../styles/globals.css'
 
 export const metadata = {
@@ -50,11 +51,13 @@ interface Props {
 
 function RootLayout({ children }: Props) {
   return (
-    <html lang='en'>
-      <body>
-        <Header />
-        {children}
-        <Footer />
+    <html lang='en' suppressHydrationWarning>
+      <body className='dark:bg-black dark:text-white'>
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )

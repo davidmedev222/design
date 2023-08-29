@@ -13,7 +13,7 @@ function ContactForm() {
   const classes = {
     form: clsx('mx-auto grid max-w-screen-md gap-y-5 p-4 opacity-0', isIntersecting && 'animate-scale-in'),
     button: clsx(
-      'mt-5 rounded-lg bg-black px-10 py-5 text-center text-lg text-white transition-colors duration-300 hover:bg-gray-700'
+      'mt-5 rounded-lg bg-black px-10 py-5 text-center text-lg text-white transition-colors duration-300 hover:bg-gray-700 dark:bg-white dark:text-black dark:hover:bg-gray-200'
     )
   }
 
