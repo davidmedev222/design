@@ -19,7 +19,10 @@ function Textarea({ name, placeholder, rows }: Props) {
 
   const classes = {
     container: clsx('grid gap-y-1.5'),
-    textarea: clsx(errors[name] && 'border-red-500 focus:border-red-500 focus:ring-red-500')
+    textarea: clsx(
+      errors[name] &&
+        'border-red-500 focus:border-red-500 focus:ring-red-500 dark:border-red-500 dark:focus:border-red-500 dark:focus:ring-red-500'
+    )
   }
 
   return (

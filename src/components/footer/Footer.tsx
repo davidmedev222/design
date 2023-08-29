@@ -6,8 +6,10 @@ import BrandTwitterIcon from '../icons/BrandTwitterIcon'
 function Footer() {
   const classes = {
     footer: clsx('mx-auto flex max-w-screen-xl items-center justify-between px-4 py-10'),
-    brand: clsx('group rounded-full bg-black p-2 transition duration-500'),
-    icon: clsx('fill-black stroke-white transition-transform duration-300 lg:group-hover:-rotate-24')
+    brand: clsx('group rounded-full bg-black p-2 transition duration-500 dark:bg-white'),
+    icon: clsx(
+      'fill-black stroke-white transition-transform duration-300 dark:fill-white dark:stroke-black lg:group-hover:-rotate-24'
+    )
   }
 
   return (
